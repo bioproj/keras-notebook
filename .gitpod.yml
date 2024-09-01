@@ -1,4 +1,6 @@
 
+# https://www.gitpod.io/docs/references/gitpod-yml#ports
+
 tasks:
   - name: jupyter
     # change working directory as per configured in `checkoutLocation`
@@ -10,3 +12,15 @@ tasks:
     #   echo npm run build
     command: |
      ./start.sh
+
+ports:
+    # - name: Website
+    #   port: 3000
+    #   onOpen: open-preview
+    - name: jupyter
+      description: jupyter notebook
+      port: 8888
+      onOpen: open-browser
+    # - name: Server
+    #   port: 10000
+    #   onOpen: ignore
