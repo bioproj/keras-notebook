@@ -1,0 +1,12 @@
+
+tasks:
+  - name: jupyter
+    # change working directory as per configured in `checkoutLocation`
+    # which is configured above as `/workspaces/backend`
+    # before: |
+    #   cd ../backend
+    # init: |
+    #   echo npm install
+    #   echo npm run build
+    command: |
+     ./start.sh
